@@ -84,8 +84,6 @@ class CloudflareJev:
 
 
 class FakeJev:
-    """Keyword heuristics + noise. ONLY for testing the pipeline without keys."""
-
     name = "jev"
     model = "FAKE-jev (dry run)"
     KEYWORDS = {

@@ -6,3 +6,5 @@ secrets*
 results_dryrun/
 __pycache__/
 .ipynb_checkpoints/
+.venv
+results/
