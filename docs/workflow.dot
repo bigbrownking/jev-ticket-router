@@ -1,0 +1,34 @@
+digraph workflow {
+  rankdir=LR;
+  graph [fontname="Helvetica", fontsize=11, nodesep=0.35, ranksep=0.5, bgcolor="#fcfcfb", pad=0.3];
+  node  [fontname="Helvetica", fontsize=10, shape=box, style="rounded,filled", fillcolor="#ffffff", color="#c9c8c2", penwidth=1.2];
+  edge  [fontname="Helvetica", fontsize=9, color="#8a8984", fontcolor="#52514e"];
+
+  ticket [label="Customer message\n(state = raw text)", fillcolor="#eef4fc", color="#2a78d6"];
+
+  subgraph cluster_jev {
+    label="ONE Jev call  (System One model, typed answers + probabilities)"; fontsize=10; fontcolor="#2a78d6";
+    style="rounded,dashed"; color="#2a78d6";
+    topic   [label="topic: Choice\nbilling | delivery | technical |\naccount_security | general |\nnot_a_support_request"];
+    urgency [label="urgency: Score 0–3\n0 none … 3 emergency"];
+    unauth  [label="unauthorized_access: Noul\nP(someone else got in)"];
+    inj     [label="injection_attempt: Noul\nP(text tries to steer the system)"];
+  }
+
+  subgraph cluster_policy {
+    label="Plain Python policy  (thresholds in config.py)"; fontsize=10; fontcolor="#52514e";
+    style="rounded,dashed"; color="#8a8984";
+    q [label="queue\n· unauthorized ≥ 0.5 → security\n· else topic → queue\nconfidence = min(P(topic), 1 − P(unauth))", shape=box];
+    p [label="priority\nsecurity → high\nspam → normal\nelse urgency ≥ 1.5 → high"];
+    gate [label="auto-decide?\nconfidence ≥ t*  AND\ninjection < 0.5", shape=diamond, fillcolor="#fff8ec", color="#eda100"];
+  }
+
+  auto  [label="Auto-route to queue\n(+ priority)", fillcolor="#eaf7f1", color="#1baf7a"];
+  human [label="Human review\n(suggested queue attached)", fillcolor="#fdf0eb", color="#eb6834"];
+
+  ticket -> {topic urgency unauth inj};
+  topic -> q; unauth -> q; urgency -> p; q -> p [style=dotted, arrowhead=none];
+  q -> gate; inj -> gate; p -> gate [style=dotted];
+  gate -> auto [label="yes"];
+  gate -> human [label="no"];
+}

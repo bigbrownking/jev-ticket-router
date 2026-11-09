@@ -1,0 +1,8 @@
+# never commit keys
+.env
+*.env
+secrets*
+# local test output
+results_dryrun/
+__pycache__/
+.ipynb_checkpoints/

@@ -1,0 +1,81 @@
+id,text,lang,queue,priority
+t001,"I was charged twice for order #48213 — two payments of 12,990 ₸ on my card. Please refund the duplicate.",en,billing,normal
+t002,"Where is my refund? I returned the headphones on October 20 and the return was accepted, but the money still hasn't come back to my card.",en,billing,normal
+t003,The promo code AUTUMN15 was accepted at checkout but the discount wasn't applied to the final price. Can you fix the charge?,en,billing,normal
+t004,I need a VAT invoice for my company for order 77120 — our accountant needs it by tomorrow morning for the quarterly report.,en,billing,high
+t005,"Your system charged me 89,000 ₸ for a fridge I cancelled an hour after ordering. That was my rent money, I need it back today.",en,billing,high
+t006,"Can I pay for my order in installments, and is there any extra fee for that?",en,billing,normal
+t007,My payment keeps getting declined at checkout even though my card works everywhere else.,en,billing,normal
+t008,"Здравствуйте, с карты списали деньги за заказ, но заказ в приложении отображается как неоплаченный. Что делать?",ru,billing,normal
+t009,"Верните деньги за отменённый заказ №55102, прошло уже 14 рабочих дней.",ru,billing,normal
+t010,"Почему с меня взяли 500 тенге за доставку, если на сайте было написано «бесплатная доставка»?",ru,billing,normal
+t011,"I cancelled my Premium subscription last month but was still charged 2,490 ₸ this month. Please refund it.",en,billing,normal
+t012,"The seller gave me a partial refund of 3,000 ₸ instead of the full 15,000 ₸ we agreed on. Please help.",en,billing,normal
+t013,Bonus points from my last purchase were not credited to my account.,en,billing,normal
+t014,"Срочно! Деньги списали трижды за один заказ, на карте ноль, мне нечем платить за лекарства.",ru,billing,high
+t015,My order #60231 was supposed to arrive on Monday. It's Thursday and tracking hasn't updated in 4 days.,en,delivery,normal
+t016,The courier marked my parcel as delivered but I never received it. Nobody came to my apartment.,en,delivery,normal
+t017,The box arrived crushed and the glass vase inside is broken. What should I do?,en,delivery,normal
+t018,Can I change the delivery address for my order? I'm moving to Astana next week.,en,delivery,normal
+t019,"I need the dress for my wedding this Saturday and the order still says 'in transit'. Please, can you speed it up?",en,delivery,high
+t020,The courier called and said he'll come between 2 and 6 but I'm at work. Can I reschedule to tomorrow?,en,delivery,normal
+t021,I received someone else's order — a kids' bike instead of my laptop bag.,en,delivery,normal
+t022,"Посылка уже две недели лежит в Алматы на сортировочном центре, когда её отправят в Караганду?",ru,delivery,normal
+t023,"Курьер нагрубил и отказался поднимать заказ на этаж, хотя доставка была оплачена «до двери».",ru,delivery,normal
+t024,Где мой заказ? Трек-номер не работает.,ru,delivery,normal
+t025,Only 2 of the 3 items in my order arrived. The phone case is missing.,en,delivery,normal
+t026,"Is pickup-point delivery available in Shymkent, or only courier delivery?",en,delivery,normal
+t027,"Мне нужен этот подарок к завтрашнему дню рождения дочери, а заказ ещё даже не отправлен!",ru,delivery,high
+t028,Tracking says my order was returned to the sender. I didn't refuse it — why was it sent back?,en,delivery,normal
+t029,"The app crashes every time I open the shopping cart. iPhone 13, iOS 18.",en,technical,normal
+t030,I can't log in — after entering the SMS code it just shows a spinning circle forever.,en,technical,normal
+t031,Search returns no results for any query since this morning's update.,en,technical,normal
+t032,"Product photos don't load on the website, only gray boxes. Tried Chrome and Firefox.",en,technical,normal
+t033,"The parcel has been at the pickup point for 3 days but the app won't show me the pickup code, the screen is just blank.",en,technical,normal
+t034,"I'm not receiving any SMS codes, so I can't confirm my phone number.",en,technical,normal
+t035,Push notifications stopped working after I updated the app.,en,technical,normal
+t036,Приложение на Android выдаёт ошибку 503 при оформлении заказа.,ru,technical,normal
+t037,"Не могу загрузить фото в отзыв, кнопка «Загрузить» не реагирует.",ru,technical,normal
+t038,"Сайт не открывается уже час, пишет «Сервис временно недоступен». У меня горит заказ для клиента.",ru,technical,high
+t039,Dark mode makes the price text invisible on the checkout page.,en,technical,normal
+t040,"When I switch the app language to Kazakh, half of the buttons are still in Russian.",en,technical,normal
+t041,The 'Add to favorites' heart icon does nothing on the product page.,en,technical,normal
+t042,My seller dashboard shows zero orders since yesterday but customers say they've ordered. I'm losing sales right now.,en,technical,high
+t043,Someone logged into my account from another city and placed an order for an iPhone that I didn't make!,en,security,high
+t044,"I got an SMS with a login code I didn't request, and now my password doesn't work.",en,security,high
+t045,"There are 3 orders in my history that I never placed, paid with my saved card.",en,security,high
+t046,Somebody changed the email and phone number on my account. I can't get in anymore.,en,security,high
+t047,I got a message from 'Bazarly support' asking for my card CVV to 'verify a refund'. Is this you? I already sent it.,en,security,high
+t048,"Мой аккаунт взломали, сменили пароль и оформили заказ на 300 000 тенге.",ru,security,high
+t049,"Пришло уведомление о входе с нового устройства в 3 часа ночи, это был не я.",ru,security,high
+t050,"С моей карты, привязанной к аккаунту, ушли деньги на заказы, которые я не делал.",ru,security,high
+t051,My delivery address was changed to an address in another city and I didn't do it.,en,security,high
+t052,A seller asked me to pay outside the platform by bank transfer and now he's not answering. I think I was scammed.,en,security,high
+t053,I lost my phone with the app logged in. How do I log out of all devices before someone uses my account?,en,security,high
+t054,"Мне звонили «из службы безопасности Bazarly» и попросили продиктовать код из СМС. Я продиктовал, что теперь делать?",ru,security,high
+t055,"Someone is using my bonus points — the balance went from 12,000 to 0 and I didn't spend them.",en,security,high
+t056,Does this vacuum cleaner come with a Kazakh-language manual?,en,general,normal
+t057,What is your return policy for clothes that don't fit?,en,general,normal
+t058,Can I become a seller on Bazarly? What documents do I need?,en,general,normal
+t059,Just wanted to say thank you — the courier was super polite and fast!,en,general,normal
+t060,Is the Samsung phone sold here an official version with warranty in Kazakhstan?,en,general,normal
+t061,"Подскажите, есть ли у вас подарочные сертификаты?",ru,general,normal
+t062,Какие часы работы у пункта выдачи на Абая?,ru,general,normal
+t063,"Хочу оставить отзыв: приложение стало намного удобнее, спасибо!",ru,general,normal
+t064,Do you have a loyalty program for frequent buyers?,en,general,normal
+t065,How do I leave a review for a product I bought?,en,general,normal
+t066,"Can you recommend a good laptop for a student under 300,000 ₸?",en,general,normal
+t067,When will the Black Friday sale start this year?,en,general,normal
+t068,Есть ли у вас приложение для iPad?,ru,general,normal
+t069,"Get 10,000 followers on Instagram for just $5!!! Visit boostfollowers.example now",en,spam,normal
+t070,"Dear sir, we offer SEO services to bring your website to Google top-1. Reply for a price list.",en,spam,normal
+t071,asdfghjkl qwerty 123,en,spam,normal
+t072,CONGRATULATIONS! You won an iPhone 17. Click here to claim your prize: win-prize.example,en,spam,normal
+t073,Займы без проверки кредитной истории за 5 минут! Звоните прямо сейчас!,ru,spam,normal
+t074,"Продам гараж в Караганде, недорого.",ru,spam,normal
+t075,"Crypto investment opportunity: double your money in 7 days, guaranteed. DM me.",en,spam,normal
+t076,"Hi, are you interested in buying a database of 50,000 Kazakhstan email addresses?",en,spam,normal
+t077,test test test,en,spam,normal
+t078,"Набираем сотрудников на удалёнку, доход от 500 000 тенге в неделю, без опыта.",ru,spam,normal
+t079,Check out my YouTube channel for unboxing videos!! Subscribe pls,en,spam,normal
+t080,We are a logistics company looking for a partnership with your marketplace. Please forward this to your business development team.,en,spam,normal
