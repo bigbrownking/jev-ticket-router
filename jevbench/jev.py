@@ -12,7 +12,6 @@ from .questions import QUESTIONS
 
 
 def _choice_confidence(probs: dict) -> float:
-    """1 - normalised entropy. Only used if a backend omits the confidence field."""
     ps = [p for p in probs.values() if p > 0]
     if len(probs) < 2:
         return 1.0

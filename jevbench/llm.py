@@ -28,11 +28,6 @@ def user_message(text: str) -> str:
 
 
 def parse_llm_output(text: str):
-    """Returns (parsed_or_None, status). status: ok | recovered | unparseable | schema_violation.
-
-    'recovered' = not valid JSON as returned (e.g. wrapped in ``` fences or prose) but a JSON
-    object could be extracted. It is counted separately and NOT as invalid.
-    """
     status = "ok"
     try:
         obj = json.loads(text)
@@ -109,8 +104,6 @@ class OpenAILLM:
 
 
 class FakeLLM:
-    """Offline stand-in. ONLY for testing the pipeline without keys."""
-
     name = "llm"
     model = "FAKE-llm (dry run)"
 

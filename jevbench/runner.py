@@ -1,8 +1,3 @@
-"""Runs one system over a dataset, one call at a time, timing each call.
-
-Results are appended to a JSONL file as they arrive, so an interrupted run resumes
-where it stopped and a finished run is never paid for twice.
-"""
 from __future__ import annotations
 
 import json
@@ -28,7 +23,6 @@ def _load_done(path: Path) -> dict:
 
 
 def run_system(system, df: pd.DataFrame, out_path: str | Path, warmup: bool = True, verbose: bool = True) -> list[dict]:
-    """system: a Jev or LLM backend (has .name 'jev' or 'llm' and .ask(text))."""
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     done = _load_done(out_path)
